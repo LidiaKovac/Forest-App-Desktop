@@ -1,0 +1,91 @@
+@import "../../styling/colors";
+.home__wrap {
+    background-color: $bg;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .home__content {
+        height: 50vh;
+        color: white;
+        font-family: Helvetica;
+        font-weight: lighter;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .timer__wrap {
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .timer__visual {
+                background-color: $plant-bg;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                justify-self: flex-start;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                img {
+                    width: 130px;
+                    justify-self: center;
+                    margin-bottom: 10px;
+                    user-select: none;
+                }
+            }
+            .timer__numbers {
+                font-family: Helvetica;
+                font-size: 40pt;
+                font-weight: lighter;
+
+                display: flex;
+                flex-direction: row;
+
+                justify-content: center;
+                align-items: center;
+
+                .add-remove__time {
+                    margin-left: 20px;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .start__button {
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 11pt;
+                user-select: none;
+
+                background-color: $plant-bg;
+                color: black;
+                font-weight: normal;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .give-up__button {
+                border: 1px solid white;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 11pt;
+                user-select: none;
+            }
+        }
+    }
+}
