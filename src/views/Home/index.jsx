@@ -33,9 +33,12 @@ const Home = () => {
     setStatus("gave up");
   };
   const leavePage = () => {
+    setTimeout(()=> {
         stopTimer();
-        setStatus("gave up");
-    }
+    setStatus("gave up");
+    }, 5000)
+    
+  }
   //HANDLES TITLE CHANGE
   const title_in = () => (document.title = `Keep Focusing!`);
   const title_out = () => (document.title = "Come back!");
