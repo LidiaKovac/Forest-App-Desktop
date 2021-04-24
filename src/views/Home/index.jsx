@@ -99,7 +99,7 @@ const Home = () => {
                   setInterval(
                     () => setMinutes((m) => m - 1),
                     //since setINterval is not an asyncrounous function, time is handled in the useEffect
-                    1000
+                    60000
                   )
                 );
                 document.title = `Keep Focusing!`;
