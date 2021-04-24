@@ -33,17 +33,14 @@ const Home = () => {
     setStatus("gave up");
   };
   const leavePage = () => {
-    setTimeout(()=> {
         stopTimer();
-    setStatus("gave up");
-    }, 5000)
-    
-  }
+        setStatus("gave up");
+    }
   //HANDLES TITLE CHANGE
   const title_in = () => (document.title = `Keep Focusing!`);
   const title_out = () => (document.title = "Come back!");
   window.onfocus = title_in;
-  window.onblur = leavePage;
+  window.visibilitychange = leavePage;
   return (
     <div className="home__wrap">
       <Confirmation show={show} giveUp={giveUp} setShow={setShow} />
