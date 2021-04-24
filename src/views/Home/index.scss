@@ -41,9 +41,11 @@
                     justify-self: center;
                     margin-bottom: 10px;
                     user-select: none;
+                    -webkit-user-drag: none;
                 }
             }
             .timer__numbers {
+                width: 400px;
                 font-family: Helvetica;
                 font-size: 40pt;
                 font-weight: lighter;
@@ -53,6 +55,7 @@
 
                 justify-content: center;
                 align-items: center;
+                user-select: none;
 
                 .add-remove__time {
                     margin-left: 20px;
@@ -76,8 +79,14 @@
                 background-color: $plant-bg;
                 color: black;
                 font-weight: normal;
+                border: none;
                 padding-left: 10px;
                 padding-right: 10px;
+
+                &:disabled {
+                    color: grey;
+                    cursor: not-allowed;
+                }
             }
             .give-up__button {
                 border: 1px solid white;

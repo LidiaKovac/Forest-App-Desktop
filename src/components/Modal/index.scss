@@ -1,0 +1,51 @@
+@import "../../styling/colors";
+
+.modal__wrap {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, .5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .modal__inner {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+
+        border-radius: 20px;
+        padding: 50px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        font-family: Helvetica;
+        button {
+            border: none;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            &#gu {
+            background-color: red;
+            }
+            &#kg {
+                background-color: $bg;
+            }
+            &:hover {
+                -webkit-box-shadow: 5px 5px 29px 3px rgba(163,163,163,1);
+-moz-box-shadow: 5px 5px 29px 3px rgba(163,163,163,1);
+box-shadow: 5px 5px 29px 3px rgba(163,163,163,1);
+            }
+        }
+    }
+}
+
+.modal__hide {
+    display: none;
+}
